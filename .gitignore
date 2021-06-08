@@ -1,0 +1,17 @@
+# dependencies
+cloud-disk-api/node_modules
+cloud-disk-api/files
+cloud-disk-api/public
+cloud-disk-frontend/node_modules
+cloud-disk-frontend/build
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.DS_Store
+.idea
+.vscode
+.editorconfig
+.eslintrc
+.eslintcache

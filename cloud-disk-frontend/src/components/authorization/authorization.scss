@@ -1,0 +1,37 @@
+@import '../../utils/colors.scss';
+
+.authorization {
+  width: 537px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 27px;
+  align-self: center;
+  margin-top: 236px;
+  background-color: #fff;
+  padding: 25px 33px;
+
+  &__header {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 43px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  &__submit {
+    border: none;
+    outline: none;
+    background-color: $font-color;
+    color: #fff;
+    padding: 10px 25px;
+    align-self: flex-end;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+      transition: opacity .3s linear;
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../utils/btnState.scss';
+
+@mixin btn-hover {
+  cursor: $cursor;
+  transition: $transition;
+  opacity: $opacity;
+}
+
+.disk {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 100%;
+  &__btns {
+    display: flex;
+  }
+  &__back {
+    background-image: url(../../assets/img/back.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    background-size: 24px 13px;
+    width: 55px;
+    height: 34px;
+    border: 1px solid #566885;
+    border-radius: 37px;
+    outline: none;
+    &:hover {
+      @include btn-hover;
+    }
+  }
+  &__create {
+    margin-left: 10px;
+    background-color: inherit;
+    border: 1px solid #566885;
+    border-radius: 37px;
+    outline: none;
+    height: 34px;
+    padding: 0 8px;
+    &:hover {
+      @include btn-hover;
+    }
+  }
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &_opened {
+    display: flex;
+  }
+  &__container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__close {
+    padding: 3px;
+    &:hover {
+      @include btn-hover;
+    }
+  }
+  &__submit {
+    align-self: flex-end;
+    padding: 5px;
+    &:hover {
+      @include btn-hover;
+    }
+  }
+}
